@@ -8,11 +8,10 @@ const HeroSection = () => {
       <div style={styles.textContainer}>
         <h1 style={styles.title}>
           Center of Excellence <br />
-          <span style={styles.highlight}>on Robotics</span>
+          <span style={styles.highlight}>on Robotics and Automation</span>
         </h1>
         <p style={styles.subtitle}>
-          Pioneering innovation in robotics education, research, <br />
-          and industry collaboration
+        "Empowering the next generation of robotics innovators through research, education, and industry collaboration."
         </p>
         <div style={styles.buttonGroup}>
           <button style={styles.primaryBtn}>Learn More</button>
@@ -38,23 +37,25 @@ const styles = {
     justifyContent: 'space-between',
     padding: '50px',
     alignItems: 'center',
-    background: 'linear-gradient(to right, #f9fbfd, #fefefe)',
+    
     flexWrap: 'wrap',
   },
   textContainer: {
     maxWidth: '45%',
+    marginLeft:"40px",
   },
   title: {
-    fontSize: '48px',
+    fontSize: '60px',
     fontWeight: 'bold',
     color: '#111',
-    lineHeight: '1.2',
+    lineHeight: '0.8',
   },
   highlight: {
     color: '#1664f3',
+    fontSize : "30px",
   },
   subtitle: {
-    fontSize: '18px',
+    fontSize: '17px',
     color: '#555',
     marginTop: '20px',
     marginBottom: '30px',
@@ -86,6 +87,7 @@ const styles = {
     flexDirection: 'column',
     gap: '20px',
     maxWidth: '50%',
+    marginLeft:"80px",
   },
   largeImage: {
     width: '100%',
