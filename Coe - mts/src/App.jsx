@@ -6,13 +6,14 @@ import Navbar from './Components/Navbar.jsx';
 import Landingpage from './Components/Landingpage.jsx';
 import About from './Components/About.jsx';
 import VisionMission from './Components/VisionMission.jsx';
+import Features from './Components/Features.jsx';
 
 function App() {
  
 
   return (
     <>
-      <div className='body'>
+    <div className='body'>
       <div>
         <Navbar />
       </div>
@@ -25,7 +26,10 @@ function App() {
       <div>
         <VisionMission />
       </div>
+      <div>
+        <Features />
       </div>
+    </div>
 
     </>
   )

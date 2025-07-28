@@ -4,8 +4,7 @@ import './VisionMission.css';
 const VisionMission = () => {
   const containerStyle = {
     backgroundColor: '#f9fbfc',
-    minHeight: '100vh',
-    padding: '60px 20px',
+    padding: '20px 20px',
     fontFamily: 'Arial, sans-serif',
   };
 
