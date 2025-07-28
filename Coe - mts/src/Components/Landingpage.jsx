@@ -7,7 +7,7 @@ const HeroSection = () => {
      
       <div style={styles.textContainer}>
         <h1 style={styles.title}>
-          Center of Excellence <br />
+          Center of Excellence <br/>
           <span style={styles.highlight}>on Robotics and Automation</span>
         </h1>
         <p style={styles.subtitle}>
@@ -15,7 +15,7 @@ const HeroSection = () => {
         </p>
         <div style={styles.buttonGroup}>
           <button style={styles.primaryBtn}>Learn More</button>
-          <button style={styles.secondaryBtn}>Get in Touch</button>
+          
         </div>
       </div>
 

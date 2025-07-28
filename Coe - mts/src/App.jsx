@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './Components/Navbar.jsx';
 import Landingpage from './Components/Landingpage.jsx';
 import About from './Components/About.jsx';
+import VisionMission from './Components/VisionMission.jsx';
 
 function App() {
  
@@ -20,6 +21,9 @@ function App() {
       </div>
       <div>
         <About />
+      </div>
+      <div>
+        <VisionMission />
       </div>
       </div>
 

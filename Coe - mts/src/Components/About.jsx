@@ -17,7 +17,7 @@ const About = () => {
         flexShrink: "0",
     };
     const image = {
-        height:"400px",
+        height:"500px",
         width: "450px",
         borderRadius : "07px",
     };
