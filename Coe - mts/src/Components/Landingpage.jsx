@@ -4,7 +4,7 @@ import './Landingpage.css'
 const HeroSection = () => {
   return (
     <div className="hero-section" style={styles.container}>
-      {/* Left Text Section */}
+     
       <div style={styles.textContainer}>
         <h1 style={styles.title}>
           Center of Excellence <br />
@@ -19,7 +19,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Right Image Grid */}
+    
       <div style={styles.imageContainer}>
         <img src="Coeimg.jpg" alt="robot1" style={styles.largeImage} />
         <div style={styles.bottomImages}>

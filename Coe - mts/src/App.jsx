@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Components/Navbar.jsx';
 import Landingpage from './Components/Landingpage.jsx';
+import About from './Components/About.jsx';
 
 function App() {
  
@@ -11,10 +12,15 @@ function App() {
   return (
     <>
       <div className='body'>
+      <div>
         <Navbar />
       </div>
       <div>
         <Landingpage />
+      </div>
+      <div>
+        <About />
+      </div>
       </div>
 
     </>
