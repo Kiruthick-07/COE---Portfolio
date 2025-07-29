@@ -8,6 +8,7 @@ import About from './Components/About.jsx';
 import VisionMission from './Components/VisionMission.jsx';
 import Features from './Components/Features.jsx';
 import Courses from './Components/Courses.jsx';
+import Imagegallery from './Components/Imagegallery.jsx';
 
 function App() {
  
@@ -32,6 +33,9 @@ function App() {
       </div>
       <div>
         <Courses />
+      </div>
+      <div>
+        <Imagegallery />
       </div>
     </div>
 
