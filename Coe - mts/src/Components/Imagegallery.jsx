@@ -4,6 +4,7 @@ const ImageGallery = () => {
   const sliderRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const offsetRef = useRef(0); // <-- store offset in a ref
 
   const images = [
     '/img1.JPG',
@@ -20,7 +21,6 @@ const ImageGallery = () => {
 
   useEffect(() => {
     const slider = sliderRef.current;
-    let offset = 0;
     const container = slider.parentElement;
     let slideWidth = container.offsetWidth;
     const speed = 2;
@@ -28,15 +28,22 @@ const ImageGallery = () => {
 
     const slide = () => {
       if (!isHovered) {
-        offset -= speed;
-        if (offset <= -(slideWidth * (images.length / 2))) {
-          offset = 0;
+        offsetRef.current -= speed;
+        // When the first set of images has fully scrolled, instantly reset offset to 0 (no transition)
+        if (offsetRef.current <= -(slideWidth * images.length)) {
+          slider.style.transition = 'none';
+          offsetRef.current = 0;
+          slider.style.transform = `translateX(${offsetRef.current}px)`;
+          void slider.offsetWidth;
+          slider.style.transition = 'transform 0.3s ease';
+        } else {
+          slider.style.transform = `translateX(${offsetRef.current}px)`;
         }
-        slider.style.transform = `translateX(${offset}px)`;
       }
       animationFrameId = requestAnimationFrame(slide);
     };
 
+    slider.style.transition = 'transform 0.3s ease';
     animationFrameId = requestAnimationFrame(slide);
 
     const handleResize = () => {
@@ -93,7 +100,7 @@ const ImageGallery = () => {
     objectFit: 'cover',
     marginRight: '16px',
     transition: 'transform 0.3s cubic-bezier(.4,2,.6,1)',
-    transform: hoveredIndex === index ? 'scale(1.1)' : 'scale(1)',
+    transform: hoveredIndex === index ? 'scale(1.25)' : 'scale(1)',
     zIndex: hoveredIndex === index ? 2 : 1,
     boxShadow: hoveredIndex === index ? '0 8px 24px rgba(0,0,0,0.18)' : undefined,
     cursor: 'pointer',
@@ -109,13 +116,13 @@ const ImageGallery = () => {
         onMouseLeave={() => { setIsHovered(false); setHoveredIndex(null); }}
       >
         <div ref={sliderRef} style={sliderWrapperStyle}>
-          {images.map((src, index) => (
+          {images.concat(images).map((src, index) => (
             <img
               key={index}
               src={src}
-              alt={`Slide ${index + 1}`}
-              style={imageStyle(index)}
-              onMouseEnter={() => setHoveredIndex(index)}
+              alt={`Slide ${index % images.length + 1}`}
+              style={imageStyle(index % images.length)}
+              onMouseEnter={() => setHoveredIndex(index % images.length)}
               onMouseLeave={() => setHoveredIndex(null)}
             />
           ))}

@@ -8,6 +8,7 @@ const Navbar = () => {
     alignItems: 'center',
     padding: '2px 30px', 
     boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+    background: 'linear-gradient(to right, #e0f2fe, #ede9fe)',
     
   };
   const keclogo = {

@@ -3,7 +3,7 @@ import './VisionMission.css';
 
 const VisionMission = () => {
   const containerStyle = {
-    backgroundColor: '#f9fbfc',
+    background: 'linear-gradient(to right, #f8fafc, #f1f5f9)',
     padding: '20px 20px',
     fontFamily: 'Arial, sans-serif',
   };

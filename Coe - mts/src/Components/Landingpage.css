@@ -7,3 +7,19 @@
     height: 75vh;      
     box-sizing: border-box;
 }
+button:hover {
+    transform: scale(1.05);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .hero-section div {
+      max-width: 100% !important;
+      margin: 0 !important;
+    }
+  }
+  
