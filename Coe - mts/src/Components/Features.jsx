@@ -25,16 +25,16 @@ const Features = () => {
   const cardsContainerStyle = {
     display: 'flex',
     flexWrap: 'wrap',
-    gap: '40px',
+    gap: '80px',
     justifyContent: 'center',
-    maxWidth: '1200px',
+    maxWidth: '1900px',
     margin: '0 auto',
   };
 
   const cardStyle = {
     backgroundColor: '#fff',
     borderRadius: '16px',
-    boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
+    boxShadow: "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px",
     padding: '30px',
     flex: '1 1 280px',
     maxWidth: '320px',
@@ -73,50 +73,61 @@ const Features = () => {
 
       <div style={cardsContainerStyle}>
         <div style={cardStyle}>
+          <div style={iconContainerStyle}>📈</div>
+          <div style={titleStyle}>Highlighting Features</div>
+          <div style={textStyle}>
+            <ul style={{textAlign:"left"}}>
+              <li>Well equipped facilities with more than 1
+              crore of investment.</li>
+              <li>Signed MoU with M/s. FANUC India Private
+              limited, Bangalore</li>
+              <li>Established FANUC training Academy</li>
+              <li>Established e-Yantra Lab initiative with
+              IIT, Bombay</li>
+              <li>Placement support in the area of Robotics
+              and Automation</li>
+              <li>Well equipped research facilities</li>
+              <li>Outcome of student project to paper
+              Publication in the reputed journals.</li>
+              <li>Offers consultancy, training courses in the
+              field of Robotics.</li>
+              <li>Associated with Robotics club of KEC.</li>
+              <li>Associated with The Robotics Society (TRS)
+              - KEC student Chapter.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style={cardStyle}>
           <div style={iconContainerStyle}>🤖</div>
-          <div style={titleStyle}>Advanced Robotics Labs</div>
+          <div style={titleStyle}>List Of Major Equipments</div>
           <div style={textStyle}>
-            State-of-the-art facilities equipped with the latest robotics hardware and software
+            <ul style={{textAlign:'left'}}>
+              <li>Aristo Robot (MTAB)</li>
+              <li>LabVIEW Robotics sbRIO Starter Kit</li>
+              <li>6 Axis Industrial Robot Arm (ABB IRB 1410)</li>
+              <li>High Performance Real Time Camera</li>
+              <li>Qbot-2 (Quanser)</li>
+              <li>NAO V6 Robot</li>
+              <li>Dobot Magician Educational Kit</li>
+              <li>FANUC Robot ER-4iA</li>
+              <li>FANUC CNC Simulator (Lathe and Mill)</li>
+              <li>Robotic PRR type Manipulator</li>
+            </ul>
           </div>
         </div>
 
         <div style={cardStyle}>
-          <div style={iconContainerStyle}>👥</div>
-          <div style={titleStyle}>Industry Collaboration</div>
+          <div style={iconContainerStyle}>💻</div>
+          <div style={titleStyle}>List Of Software Details</div>
           <div style={textStyle}>
-            Strong partnerships with leading technology companies and research institutions
-          </div>
-        </div>
-
-        <div style={cardStyle}>
-          <div style={iconContainerStyle}>📖</div>
-          <div style={titleStyle}>Research Excellence</div>
-          <div style={textStyle}>
-            Cutting-edge research in AI, machine learning, and autonomous systems
-          </div>
-        </div>
-
-        <div style={cardStyle}>
-          <div style={iconContainerStyle}>🏆</div>
-          <div style={titleStyle}>Innovation Space</div>
-          <div style={textStyle}>
-            Dedicated areas for prototyping, testing, and developing new robotics solutions
-          </div>
-        </div>
-
-        <div style={cardStyle}>
-          <div style={iconContainerStyle}>📅</div>
-          <div style={titleStyle}>Regular Workshops</div>
-          <div style={textStyle}>
-            Hands-on training sessions and workshops conducted by industry experts
-          </div>
-        </div>
-
-        <div style={cardStyle}>
-          <div style={iconContainerStyle}>↗️</div>
-          <div style={titleStyle}>Industry Internships</div>
-          <div style={textStyle}>
-            Direct placement opportunities with our partner companies and organizations
+           <ul style={{textAlign:'left'}}>
+            <li>Robot Virtual Software (Denford)</li>
+            <li>Robot Studio 5.15</li>
+            <li>MATLAB Tool Boxes</li>
+            <li>FANUC CNC system Package – NC guide</li>
+            <li>FANUC CNC system Package – MT link</li>
+           </ul>
           </div>
         </div>
       </div>

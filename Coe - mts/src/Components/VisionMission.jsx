@@ -17,7 +17,7 @@ const VisionMission = () => {
   };
 
   const underlineStyle = {
-    width: '80px',
+    width: '500px',
     height: '4px',
     backgroundColor: '#facc15', 
     margin: '0 auto 50px auto',
@@ -26,8 +26,9 @@ const VisionMission = () => {
   const cardsContainerStyle = {
     display: 'flex',
     flexWrap: 'wrap',
-    gap: '80px',
+    gap: '40px',
     justifyContent: 'center',
+    alignContent: "spacearound",
     maxWidth: '1200px',
     margin: '0 auto',
   };
@@ -37,9 +38,8 @@ const VisionMission = () => {
     borderRadius: '16px',
     boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
     padding: '30px',
-    flex: '1 1 400px',
-    maxWidth: '500px',
-    gap:"50px",
+    flex: '1 1 300px',
+    maxWidth: '350px',
   };
 
   const iconContainerStyle = (bgColor) => ({
@@ -69,7 +69,7 @@ const VisionMission = () => {
 
   return (
     <div style={containerStyle}>
-      <h2 style={headingStyle}>Vision & Mission</h2>
+      <h2 style={headingStyle}>Vision , Mission & Objective</h2>
       <div style={underlineStyle}></div>
 
       <div style={cardsContainerStyle}>
@@ -81,9 +81,9 @@ const VisionMission = () => {
           <div style={titleStyle}>Our Vision</div>
           <div style={textStyle}>
           To be the best Centre of Excellence for
-Robotics and Automation by providing stateof-
-the-art Research & Development facilities
-for the nation and beyond
+          Robotics and Automation by providing stateof-
+          the-art Research & Development facilities
+          for the nation and beyond
           </div>
         </div>
 
@@ -95,13 +95,35 @@ for the nation and beyond
           <div style={titleStyle}>Our Mission</div>
           <div style={textStyle}>
           We are committed to providing value-based
-academic programs, training activities,
-research facilities and opportunities supported
-by continuous industry-institute interaction
-aimed at employability, entrepreneurship,
-leadership, and research aptitude among
-students to keep the Nation ahead in the
-competitive knowledge-intensive world.
+          academic programs, training activities,
+          research facilities and opportunities supported
+          by continuous industry-institute interaction
+          aimed at employability, entrepreneurship,
+          leadership, and research aptitude among
+          students to keep the Nation ahead in the
+          competitive knowledge-intensive world.
+          </div>
+        </div>
+        {/* Objective */}
+        <div style={cardStyle}>
+          <div style={iconContainerStyle('#10b981')}>
+            🎯
+          </div>
+          <div style={titleStyle}>Our Objective</div>
+          <div style={textStyle}>
+          To provide hands-on training in robotics
+          and automation field.
+         To facilitate workshops and seminars to
+          augment knowledge and skills in the field.
+         Foster partnerships with industry to
+        address real-world challenges through
+         robotics and automation.
+         To conduct advanced research in robotics
+         and automation technologies.
+         To motivate and support the students
+        community to participate in various
+         International/National level technical
+        competitions
           </div>
         </div>
       </div>
