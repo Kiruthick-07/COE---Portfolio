@@ -9,20 +9,11 @@ const Footer = () => {
     { name: 'About', href: '#about' },
     { name: 'Features', href: '#features' },
     { name: 'Courses', href: '#courses' },
-    { name: 'Events', href: '#events' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Contact', href: '#contact' }
   ];
 
   
-
-  const socialLinks = [
-    { name: 'Facebook', icon: '📘', href: 'https://facebook.com' },
-    { name: 'Twitter', icon: '🐦', href: 'https://twitter.com' },
-    { name: 'LinkedIn', icon: '💼', href: 'https://linkedin.com' },
-    { name: 'Instagram', icon: '📷', href: 'https://instagram.com' },
-    { name: 'YouTube', icon: '📺', href: 'https://youtube.com' }
-  ];
 
   return (
     <footer className="footer">
