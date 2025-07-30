@@ -66,14 +66,13 @@
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: flex !important;
-    background: 'linear-gradient(to right, #e0f2fe,rgb(199, 235, 252))',
   }
   .ul {
     display: none !important;
     position: absolute;
     top: 60px;
     right: 0;
-    background: 'linear-gradient(to right, #e0f2fe,rgb(199, 235, 252))';
+    background: linear-gradient(to right, rgb(241, 250, 251), #e3f7fc);
     flex-direction: column;
     width: 180px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.15);

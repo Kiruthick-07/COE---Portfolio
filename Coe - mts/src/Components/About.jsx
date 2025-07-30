@@ -21,10 +21,17 @@ const About = () => {
         width: "450px",
         borderRadius : "07px",
     };
+    const underlineStyle = {
+      width: '80px',
+      height: '4px',
+      backgroundColor: '#2563eb',
+      margin: '0 auto 10px auto',
+    };
   return (
     <div>
       <center>
-          <h1 style={{fontWeight:"600" , color:"black", textDecoration: "underline", textDecorationColor: "yellow", textUnderlineOffset: "8px", margin: "20px 0"}}>About Us</h1>
+          <h1 style={{fontWeight:"600" , color:"black",margin:'30px',marginBottom:"0px"}}>About Us</h1>
+          <div style={underlineStyle}></div>
       </center>
       <div style={aboutcontainer} className='aboutcontainer'>
         

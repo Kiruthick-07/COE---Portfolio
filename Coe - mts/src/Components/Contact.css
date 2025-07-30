@@ -55,7 +55,7 @@
 }
 
 .image-container:hover {
-  transform: translateY(-6px);
+  transform: scale(1.10);
 }
 
 .contact-image {
@@ -188,7 +188,7 @@
     padding: 24px 12px;
   }
   .contact-image {
-    height: 180px;
+    height: 220px;
     max-width: 100%;
   }
   .image-overlay {
@@ -233,7 +233,7 @@
     padding: 12px 4px;
   }
   .contact-image {
-    height: 120px;
+    height: 160px;
   }
   .contact-item {
     flex-direction: column;

@@ -12,13 +12,13 @@ const Contact = () => {
     {
       icon: "📞",
       title: "Phone",
-      details: "+977-1-5544444",
-      link: "tel:+977-1-5544444"
+      details: "04294226813",
+      link: "tel:04294226813"
     },
     {
       icon: "📍",
       title: "Address",
-      details: "Dhapakhel, Lalitpur, Nepal",
+      details: "Mechatronics Department , Kongu Engineering College",
       link: "https://maps.google.com/?q=Dhapakhel,Lalitpur,Nepal"
     },
     {
@@ -28,12 +28,19 @@ const Contact = () => {
       link: "https://www.kec.edu.np"
     }
   ];
+  const underlineStyle = {
+    width: '120px',
+    height: '4px',
+    backgroundColor: '#facc15',
+    margin: '0 auto 50px auto',
+  };
 
   return (
     <div className="contact-container" id="contact">
       {/* Contact Us Heading on Top */}
       <div className="contact-top-header">
-        <h2>Contact Us</h2>
+        <h2 style={{marginBottom:'0px'}}>Contact Us</h2>
+        <div style={underlineStyle}></div>
         <p>Reach out to us for any inquiries about our robotics and automation programs</p>
       </div>
       <div className="contact-content">

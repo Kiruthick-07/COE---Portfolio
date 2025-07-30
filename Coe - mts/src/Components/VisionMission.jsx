@@ -17,7 +17,7 @@ const VisionMission = () => {
   };
 
   const underlineStyle = {
-    width: '500px',
+    width: '300px',
     height: '4px',
     backgroundColor: '#facc15', 
     margin: '0 auto 50px auto',

@@ -29,21 +29,15 @@ const ImageGallery = () => {
     const slide = () => {
       if (!isHovered) {
         offsetRef.current -= speed;
-        // When the first set of images has fully scrolled, instantly reset offset to 0 (no transition)
+        // Infinite loop - when we reach the end, seamlessly continue
         if (offsetRef.current <= -(slideWidth * images.length)) {
-          slider.style.transition = 'none';
           offsetRef.current = 0;
-          slider.style.transform = `translateX(${offsetRef.current}px)`;
-          void slider.offsetWidth;
-          slider.style.transition = 'transform 0.3s ease';
-        } else {
-          slider.style.transform = `translateX(${offsetRef.current}px)`;
         }
+        slider.style.transform = `translateX(${offsetRef.current}px)`;
       }
       animationFrameId = requestAnimationFrame(slide);
     };
 
-    slider.style.transition = 'transform 0.3s ease';
     animationFrameId = requestAnimationFrame(slide);
 
     const handleResize = () => {

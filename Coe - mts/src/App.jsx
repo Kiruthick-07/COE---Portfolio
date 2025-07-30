@@ -10,6 +10,7 @@ import Features from './Components/Features.jsx';
 import Courses from './Components/Courses.jsx';
 import Imagegallery from './Components/Imagegallery.jsx';
 import Contact from './Components/Contact.jsx';
+import Footer from './Components/Footer.jsx';
 
 function App() {
  
@@ -42,6 +43,9 @@ function App() {
       </div>
       <div>
         <Contact />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
 
