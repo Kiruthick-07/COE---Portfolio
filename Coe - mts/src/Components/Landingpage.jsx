@@ -3,7 +3,16 @@ import Lottie from 'lottie-react';
 import './Landingpage.css';
 import roboticArmAnimation from './robot.json';
 
+
 const HeroSection = () => {
+
+  const goToFeatures = () => {
+    const featuresSection = document.getElementById('features');
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div style={styles.hero}>
       {/* Left Text Section */}
@@ -19,7 +28,7 @@ const HeroSection = () => {
           world-class education, and transformative industry collaboration."
         </p>
         <div style={styles.buttons}>
-          <button style={styles.primaryBtn} className='button1'>Explore Features</button>
+          <button style={styles.primaryBtn} className='button1' onClick={goToFeatures}>Explore Features</button>
           <button style={styles.secondaryBtn}>▶ Watch Demo</button>
         </div>
 

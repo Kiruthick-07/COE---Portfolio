@@ -13,43 +13,34 @@ import Contact from './Components/Contact.jsx';
 import Footer from './Components/Footer.jsx';
 
 function App() {
- 
-
   return (
-    <>
     <div className='body'>
-      <div>
-        <Navbar />
+      <Navbar />
+      <div id="home" style={{ marginTop: '70px' }}>
+        <Landingpage />
       </div>
-      <div>
-        <div style={{ marginTop: '70px' }}>
-          <Landingpage />
-        </div>
-      </div>
-      <div>
+      <div id="about">
         <About />
       </div>
       <div>
         <VisionMission />
       </div>
-      <div>
+      <div id="features">
         <Features />
       </div>
-      <div>
+      <div id="courses">
         <Courses />
       </div>
-      <div>
+      <div id="gallery">
         <Imagegallery />
       </div>
-      <div>
+      <div id="contact">
         <Contact />
       </div>
       <div>
         <Footer />
       </div>
     </div>
-
-    </>
   )
 }
 

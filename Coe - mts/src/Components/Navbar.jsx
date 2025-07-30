@@ -4,6 +4,14 @@ import './Navbar.css';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setMenuOpen(false); 
+  };
+
   const navbar = {
     display: 'flex',
     justifyContent: 'space-between',
@@ -29,6 +37,7 @@ const Navbar = () => {
     color:"#333",
     fontWeight: "500",
     fontSize: "18px",
+    cursor: 'pointer'
   };
   const ullist = {
     listStyle: 'none',
@@ -37,24 +46,19 @@ const Navbar = () => {
     display: "flex",
     gap:"60px",
     marginLeft:"10px",
-    
   };
 
   return (
     <div style={navbar} className="navbar-container">
       <img style={keclogo} src="/kec-logo-removebg-preview.png" alt="KEC Logo" />
       <div>
-        <ul
-          style={ullist}
-          className={`ul${menuOpen ? ' show' : ''}`}
-        >
-          <li><a href="#home" style={linkStyle} className='linkstyle'>Home</a></li>
-          <li><a href="#about" style={linkStyle} className='linkstyle' >About</a></li>
-          <li><a href="#features" style={linkStyle} className='linkstyle'>Features</a></li>
-          <li><a href="#courses" style={linkStyle} className='linkstyle'>Courses</a></li>
-          <li><a href="#events" style={linkStyle} className='linkstyle'>Events</a></li>
-          <li><a href="#gallery" style={linkStyle} className='linkstyle'>Gallery</a></li>
-          <li><a href="#contact" style={linkStyle} className='linkstyle'>Contact</a></li>
+        <ul style={ullist} className={`ul${menuOpen ? ' show' : ''}`}>
+          <li><a onClick={() => scrollToSection('home')} style={linkStyle} className='linkstyle'>Home</a></li>
+          <li><a onClick={() => scrollToSection('about')} style={linkStyle} className='linkstyle'>About</a></li>
+          <li><a onClick={() => scrollToSection('features')} style={linkStyle} className='linkstyle'>Features</a></li>
+          <li><a onClick={() => scrollToSection('courses')} style={linkStyle} className='linkstyle'>Courses</a></li>
+          <li><a onClick={() => scrollToSection('gallery')} style={linkStyle} className='linkstyle'>Gallery</a></li>
+          <li><a onClick={() => scrollToSection('contact')} style={linkStyle} className='linkstyle'>Contact</a></li>
         </ul>
       </div>
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
