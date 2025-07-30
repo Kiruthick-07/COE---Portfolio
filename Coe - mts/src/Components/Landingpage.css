@@ -10,6 +10,9 @@
 button:hover {
     transform: scale(1.05);
   }
+  .hero{
+    display: flex;
+  }
   
   @media screen and (max-width: 768px) {
     .hero-section {
@@ -20,6 +23,31 @@ button:hover {
     .hero-section div {
       max-width: 100% !important;
       margin: 0 !important;
+    }
+    .textdiv{
+        text-align: center;
+        font-size: 10px;
+        margin-top: -50px;
+    }
+    .h1txt{
+        font-size: 10px;
+    }
+    .status{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    /* Reduce animation size on mobile */
+    .lottieWrapper {
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .lottieWrapper > div {
+        width: 100% !important;
+        height: 100% !important;
     }
   }
   

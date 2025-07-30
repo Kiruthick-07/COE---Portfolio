@@ -9,6 +9,7 @@ import VisionMission from './Components/VisionMission.jsx';
 import Features from './Components/Features.jsx';
 import Courses from './Components/Courses.jsx';
 import Imagegallery from './Components/Imagegallery.jsx';
+import Contact from './Components/Contact.jsx';
 
 function App() {
  
@@ -20,7 +21,9 @@ function App() {
         <Navbar />
       </div>
       <div>
-        <Landingpage />
+        <div style={{ marginTop: '70px' }}>
+          <Landingpage />
+        </div>
       </div>
       <div>
         <About />
@@ -36,6 +39,9 @@ function App() {
       </div>
       <div>
         <Imagegallery />
+      </div>
+      <div>
+        <Contact />
       </div>
     </div>
 

@@ -1,13 +1,15 @@
 import React from 'react';
 import Lottie from 'lottie-react';
+import './Landingpage.css';
 import roboticArmAnimation from './robot.json';
 
 const HeroSection = () => {
   return (
     <div style={styles.hero}>
       {/* Left Text Section */}
-      <div style={styles.left}>
-        <h1 style={styles.heading}>
+      <div style={styles.left} className='hero'>
+        <div className='textdiv'>
+        <h1 style={styles.heading} className='h1txt'>
           Center of 
           <span style={styles.gradientText}> Excellence</span>
         </h1>
@@ -17,11 +19,11 @@ const HeroSection = () => {
           world-class education, and transformative industry collaboration."
         </p>
         <div style={styles.buttons}>
-          <button style={styles.primaryBtn}>Explore Programs</button>
+          <button style={styles.primaryBtn} className='button1'>Explore Features</button>
           <button style={styles.secondaryBtn}>▶ Watch Demo</button>
         </div>
 
-        <div style={styles.stats}>
+        <div style={styles.stats} className='status'>
           <div style={styles.statItem}>
             <span style={styles.statNumber}>500+</span>
             <p style={styles.statLabel}>Students Trained</p>
@@ -37,6 +39,7 @@ const HeroSection = () => {
           <div style={styles.statItem}>
             <span style={styles.statNumber}>03+</span>
             <p style={styles.statLabel}>Funded Projects</p>
+          </div>
           </div>
         </div>
       </div>
@@ -59,7 +62,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     padding: '60px 50px',
-    background: 'linear-gradient(to right, #e0f2fe, #ede9fe)',
+    background: 'linear-gradient(to right, #e0f2fe,rgb(199, 235, 252))',
 
     color: '#111827',
     flexWrap: 'wrap',
@@ -179,6 +182,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    
   },
 };
 

@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+  .aboutcontainer {
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding: 10px !important;
+    align-items: center !important;
+  }
+  .aboutcontainer img {
+    width: 90vw !important;
+    max-width: 320px !important;
+    height: auto !important;
+    margin-bottom: 12px !important;
+  }
+  .aboutcontainer h2 {
+    font-size: 22px !important;
+    text-align: center !important;
+  }
+  .aboutcontainer p {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+}
