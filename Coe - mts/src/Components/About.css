@@ -19,4 +19,7 @@
     font-size: 14px !important;
     text-align: center !important;
   }
+  .sub-text{
+    text-align: justify !important;
+  }
 }

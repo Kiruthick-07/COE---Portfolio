@@ -1,7 +1,9 @@
 import React from 'react';
 import Lottie from 'lottie-react';
 import './Landingpage.css';
-import roboticArmAnimation from './robot.json';
+import roboticArmAnimation from '../Animations/robotstat.json';
+import { text } from '@fortawesome/fontawesome-svg-core';
+
 
 
 const HeroSection = () => {
@@ -29,7 +31,7 @@ const HeroSection = () => {
         </p>
         <div style={styles.buttons}>
           <button style={styles.primaryBtn} className='button1' onClick={goToFeatures}>Explore Features</button>
-          <button style={styles.secondaryBtn}>▶ Watch Demo</button>
+          
         </div>
 
         <div style={styles.stats} className='status'>
@@ -110,6 +112,7 @@ const styles = {
     color: '#4b5563',
     marginBottom: '30px',
     maxWidth: '550px',
+    textAlign: 'justify',
   },
   buttons: {
     display: 'flex',

@@ -65,6 +65,7 @@ const VisionMission = () => {
     fontSize: '16px',
     lineHeight: '1.6',
     color: '#374151',
+    textAlign: 'justify',
   };
 
   return (

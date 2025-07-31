@@ -1,3 +1,4 @@
+import { text } from '@fortawesome/fontawesome-svg-core';
 import React from 'react';
 
 const Courses = () => {
@@ -60,6 +61,7 @@ const Courses = () => {
     color: '#374151',
     fontSize: '15px',
     lineHeight: '1.5',
+    textAlign: 'justify',
   };
 
   return (

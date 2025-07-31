@@ -29,7 +29,7 @@ const Footer = () => {
                 <p>Robotics & Automation</p>
               </div>
             </div>
-            <p className="footer-description">
+            <p className="footer-description" style={{textAlign: 'justify'}}>
               Empowering the next generation of robotics innovators through cutting-edge research, 
               world-class education, and transformative industry collaboration.
             </p>

@@ -6,8 +6,8 @@ const Contact = () => {
     {
       icon: "📧",
       title: "Email",
-      details: "coe.robotics@kec.edu.np",
-      link: "mailto:coe.robotics@kec.edu.np"
+      details: "coe.robotics@gmail.com",
+      link: "mailto:coe.robotics@gmail.com"
     },
     {
       icon: "📞",
@@ -18,14 +18,19 @@ const Contact = () => {
     {
       icon: "📍",
       title: "Address",
-      details: "Mechatronics Department , Kongu Engineering College",
-      link: "https://maps.google.com/?q=Dhapakhel,Lalitpur,Nepal"
+      details: (
+        <>
+          Mechatronics Department,<br />
+          Kongu Engineering College
+        </>
+      ),
+      link: "https://maps.google.com/?q=Kongu-Engineering-College,Erode,TamilNadu"
     },
     {
       icon: "🌐",
       title: "Website",
-      details: "www.kec.edu.np",
-      link: "https://www.kec.edu.np"
+      details: "https://mts-coe.vercel.app/",
+      link: "https://mts-coe.vercel.app/"
     }
   ];
   const underlineStyle = {
@@ -76,7 +81,7 @@ const Contact = () => {
           </div>
 
           <div className="contact-cta">
-            <button className="cta-button">
+            <button className="cta-button" onClick={() => window.location.href = "mailto:coe.robotics@gmail.com"}>
               Send us a Message
             </button>
           </div>

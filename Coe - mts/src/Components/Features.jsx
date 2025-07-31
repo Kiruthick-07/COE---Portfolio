@@ -77,7 +77,7 @@ const Features = () => {
           <div style={iconContainerStyle}>📈</div>
           <div style={titleStyle}>Highlighting Features</div>
           <div style={textStyle}>
-            <ul style={{textAlign:"left"}}>
+            <ul style={{textAlign:"justify"}}>
               <li>Well equipped facilities with more than 1
               crore of investment.</li>
               <li>Signed MoU with M/s. FANUC India Private
