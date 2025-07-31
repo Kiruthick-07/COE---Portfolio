@@ -82,7 +82,7 @@ body {
     width: 60%;
     background: linear-gradient(to right, #e0f2fe, rgb(199, 235, 252));
     padding-top: 100px;
-    padding-left: 30px;
+    padding-left: 0px;
     transition: right 0.3s ease-in-out;
   }
 
