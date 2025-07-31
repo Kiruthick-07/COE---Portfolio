@@ -54,11 +54,11 @@ button:hover {
     }
     /* Reduce animation size on mobile */
     .lottieWrapper {
-        width: 300px !important;
+        width: 200px !important;
         height: 300px !important;
     }
     .lottieWrapper > div {
-        width: 100% !important;
+        width: 80% !important;
         height: 100% !important;
     }
   }

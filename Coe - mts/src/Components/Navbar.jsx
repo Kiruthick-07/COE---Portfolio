@@ -66,8 +66,12 @@ const Navbar = () => {
           <li><a onClick={() => scrollToSection('contact')} style={linkStyle} className='linkstyle'>Contact</a></li>
         </ul>
       </div>
-      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-          <FontAwesomeIcon icon={faBars}  onClick={() => setMenuOpen(!menuOpen)} />
+      <div
+        className="menu-icon"
+        onClick={() => setMenuOpen(!menuOpen)}
+        style={{ marginRight:'20px' }}
+      >
+        <FontAwesomeIcon icon={faBars} />
       </div>
     </div>
   );
