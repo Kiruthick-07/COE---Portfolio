@@ -16,7 +16,7 @@ function App() {
   return (
     <div className='body'>
       <Navbar />
-      <div id="home" style={{ marginTop: '70px' }}>
+      <div id="home" style={{ paddingTop: '80px' }}>
         <Landingpage />
       </div>
       <div id="about">
