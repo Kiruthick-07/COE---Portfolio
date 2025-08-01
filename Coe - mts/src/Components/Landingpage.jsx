@@ -1,7 +1,7 @@
 import React from 'react';
 import Lottie from 'lottie-react';
 import './Landingpage.css';
-import roboticArmAnimation from '../Animations/robotclaw.json';
+import roboticArmAnimation from '../Animations/robotstat.json';
 import { text } from '@fortawesome/fontawesome-svg-core';
 
 
@@ -16,7 +16,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div style={styles.hero} className="hero-section">
+    <div style={styles.hero}>
       {/* Left Text Section */}
       <div style={styles.left} className='hero'>
         <div className='textdiv'>
@@ -74,9 +74,9 @@ const styles = {
     justifyContent: 'space-between',
     padding: '60px 50px',
     background: 'linear-gradient(to right, #e0f2fe,rgb(199, 235, 252))',
+
     color: '#111827',
     flexWrap: 'wrap',
-    minHeight: 'calc(100vh - 80px)',
   },
   left: {
     flex: '1 1 50%',
@@ -194,6 +194,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    
   },
 };
 
