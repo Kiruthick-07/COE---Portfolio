@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div style={styles.left} className='hero'>
         <div className='textdiv'>
         <h1 style={styles.heading} className='h1txt'>
-          Center of 
+          Centre of 
           <span style={styles.gradientText}> Excellence</span>
         </h1>
         <h2 style={styles.subheading}>on Robotics and Automation</h2>
